@@ -1,0 +1,32 @@
+.form {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  border-radius: var(--bor-rad);
+  border: none;
+  padding: 1.4rem 1.5rem;
+  /* wierd text fix below*/
+  padding-top: 1.6rem;
+  width: 100%;
+  padding-left: 4.5rem;
+  margin-bottom: 1.5rem;
+  background-color: hsl(var(--clr-white));
+  color: hsl(var(--clr-gray-500));
+}
+
+.checkbox-fake {
+  /* I think it's better to just repeat a few lines than mess with overlapping styles with an input element */
+  position: absolute;
+  width: 2rem;
+  aspect-ratio: 1;
+  border: 0.1rem solid hsl(var(--clr-gray-200));
+  border-radius: 50%;
+
+  top: 1.2rem;
+  left: 1.5rem;
+}
+.checkbox--fake:hover {
+  border-color: hsl(var(--clr-gray-200)) !important;
+}
